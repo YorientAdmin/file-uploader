@@ -1,0 +1,16 @@
+app-assets
+externals
+images
+node_modules
+dist
+**/lib/*
+jstree
+downloads
+uploads
+file-uploads
+**/downloads/*
+package-lock.json
+.fake
+.ionide
+.vscode
+files-to-upload
