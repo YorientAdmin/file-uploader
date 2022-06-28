@@ -7,7 +7,8 @@ import FormData from "form-data";
 var app = express();
 var port = 3000;
 var folderPath = "../files-to-upload";
-var apiUrl: string = "http://127.0.0.1:8181/yorient/handlers/UploadFiles.ashx?pOpt=1";
+// var apiUrl: string = "http://127.0.0.1:8181/yorient/handlers/UploadFiles.ashx?pOpt=1";
+var apiUrl: string = "http://50.21.182.70/yorient/handlers/UploadFiles.ashx?pOpt=1";
 setInterval(() => {
     var path = join(__dirname, folderPath);
     console.log(path);
@@ -16,7 +17,6 @@ setInterval(() => {
             var cp = join(path, file);
             // const stats = statSync(cp);
             // const fileSizeInBytes = stats.size;
-            console.log(cp);
             let readStream = createReadStream(cp);
             console.log(cp);
             const formData = new FormData();
